@@ -13,20 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initDisplayButton();
+        setContentView(R.layout.dashboard_activity);
     }
 
-    private void initDisplayButton() {
-        Button displayButton = findViewById(R.id.displayButton);
-        displayButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText editName = findViewById(R.id.editTextName);
-                TextView textDisplay = findViewById(R.id.textViewDisplay);
-                String nameToDisplay = editName.getText().toString();
-                textDisplay.setText("Hello " + nameToDisplay);
-            }
-        });
-    }
 }
