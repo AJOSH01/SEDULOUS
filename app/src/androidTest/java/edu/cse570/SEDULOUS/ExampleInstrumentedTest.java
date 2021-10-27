@@ -1,4 +1,4 @@
-package edu.cse570.helloworld;
+package edu.cse570.SEDULOUS;
 
 import android.content.Context;
 
