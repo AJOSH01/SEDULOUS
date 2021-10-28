@@ -16,7 +16,7 @@ public class dashboard_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        newGoal = (Button) findViewById(R.id.NewGoalDasboardBtn);
+        newGoal = (Button) findViewById(R.id.NewGoalDashboardBtn);
         newGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
