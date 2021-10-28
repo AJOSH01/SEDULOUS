@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".goal_setter_activity">
+    tools:context=".GoalTypes_activity"
+    android:background="@drawable/gb_wtb">
 
     <TextView
         android:id="@+id/textView"
@@ -12,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Goal Setter"
+        android:fontFamily="sans-serif-black"
+        android:text="Goal types"
+        android:textColor="#4CAF50"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

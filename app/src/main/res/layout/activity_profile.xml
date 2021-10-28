@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profile_activity"
-    android:background="@drawable/gradient_background_btg">
+    android:background="@drawable/gb_btg">
 
     <EditText
         android:id="@+id/editTextTextPersonName7"

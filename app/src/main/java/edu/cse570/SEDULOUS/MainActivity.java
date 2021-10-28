@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,dashboard_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -39,20 +38,20 @@ public class MainActivity extends AppCompatActivity {
         goals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MyGoals_activity.class);
+                Intent intent = new Intent(MainActivity.this, MyGoals_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening My Goals", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening My Goals", Toast.LENGTH_LONG).show();
             }
         });
 
         goal_setter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,goal_setter_activity.class);
+                Intent intent = new Intent(MainActivity.this, GoalTypes_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening Goal Setters", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening Goal Setters", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,community_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening Community", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening Community", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,profile_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening Profile", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening Profile", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,subscriptions_activity.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this,"opening Subscription", Toast.LENGTH_LONG).show();
+                //Toast.makeText(MainActivity.this,"opening Subscription", Toast.LENGTH_LONG).show();
             }
         });
 

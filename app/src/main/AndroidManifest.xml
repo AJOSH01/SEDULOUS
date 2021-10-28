@@ -19,7 +19,7 @@
             android:name=".community_activity"
             android:exported="true" />
         <activity
-            android:name=".goal_setter_activity"
+            android:name=".GoalTypes_activity"
             android:exported="true" />
         <activity
             android:name=".MyGoals_activity"
