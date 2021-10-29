@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "44449369695",
+    "project_id": "sedulous-62cfa",
+    "storage_bucket": "sedulous-62cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44449369695:android:513675315478e33a2755ea",
+        "android_client_info": {
+          "package_name": "edu.cse570.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44449369695-pc3jk66erb5obbg1cc9dsc7h7n82rcds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_ofkmWhw4HnZ_0RZDUE0yCE_9HGqm7EY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44449369695-pc3jk66erb5obbg1cc9dsc7h7n82rcds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
