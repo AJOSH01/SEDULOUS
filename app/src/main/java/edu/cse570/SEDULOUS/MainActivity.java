@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         goals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MyGoals_activity.class);
+                Intent intent = new Intent(MainActivity.this, myGoals_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening My Goals", Toast.LENGTH_LONG).show();
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         goal_setter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, GoalTypes_activity.class);
+                Intent intent = new Intent(MainActivity.this, goalTypes_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening Goal Setters", Toast.LENGTH_LONG).show();

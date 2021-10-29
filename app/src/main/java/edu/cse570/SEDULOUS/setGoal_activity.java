@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class SetGoal_activity extends AppCompatActivity {
+public class setGoal_activity extends AppCompatActivity {
 
     Button addGoal;
 
@@ -21,10 +21,10 @@ public class SetGoal_activity extends AppCompatActivity {
         addGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SetGoal_activity.this, MainActivity.class);
+                Intent intent = new Intent(setGoal_activity.this, MainActivity.class);
                 startActivity(intent);
 
-                Toast.makeText(SetGoal_activity.this,"Goal created", Toast.LENGTH_LONG).show();
+                Toast.makeText(setGoal_activity.this,"Goal created", Toast.LENGTH_LONG).show();
             }
         });
 

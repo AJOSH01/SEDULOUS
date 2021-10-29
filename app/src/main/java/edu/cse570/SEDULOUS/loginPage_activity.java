@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class LoginPage_activity extends AppCompatActivity {
+public class loginPage_activity extends AppCompatActivity {
 
     private TextView register;
 
@@ -20,7 +20,7 @@ public class LoginPage_activity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginPage_activity.this,CreateUser_activity.class);
+                Intent intent = new Intent(loginPage_activity.this, createUser_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();

@@ -20,7 +20,7 @@ public class dashboard_activity extends AppCompatActivity {
         newGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dashboard_activity.this, GoalTypes_activity.class);
+                Intent intent = new Intent(dashboard_activity.this, goalTypes_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();

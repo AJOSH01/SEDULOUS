@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MyGoals_activity extends AppCompatActivity {
+public class myGoals_activity extends AppCompatActivity {
 
     TextView GoalCategory;
     Button newGoal;
@@ -24,7 +23,7 @@ public class MyGoals_activity extends AppCompatActivity {
         GoalCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyGoals_activity.this, Goals_activity.class);
+                Intent intent = new Intent(myGoals_activity.this, goals_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MyGoals_activity.this,"opening Dashboard", Toast.LENGTH_LONG).show();
@@ -34,7 +33,7 @@ public class MyGoals_activity extends AppCompatActivity {
         newGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyGoals_activity.this, GoalTypes_activity.class);
+                Intent intent = new Intent(myGoals_activity.this, goalTypes_activity.class);
                 startActivity(intent);
             }
         });

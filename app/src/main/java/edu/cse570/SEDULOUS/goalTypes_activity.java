@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class GoalTypes_activity extends AppCompatActivity {
+public class goalTypes_activity extends AppCompatActivity {
 
     TextView educationGoal;
 
@@ -21,7 +21,7 @@ public class GoalTypes_activity extends AppCompatActivity {
         educationGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GoalTypes_activity.this,SetGoal_activity.class);
+                Intent intent = new Intent(goalTypes_activity.this, setGoal_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();

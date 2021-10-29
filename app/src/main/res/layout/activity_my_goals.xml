@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyGoals_activity"
+    tools:context=".myGoals_activity"
     android:background="@drawable/gb_wtb">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:context=".MyGoals_activity"
+        tools:context=".myGoals_activity"
         tools:layout_editor_absoluteX="-53dp">
 
         <TextView

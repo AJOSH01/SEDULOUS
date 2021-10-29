@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SedulousTheme">
         <activity
-            android:name=".Goals_activity"
+            android:name=".goals_activity"
             android:exported="false" />
         <activity
             android:name=".subscriptions_activity"
@@ -21,19 +21,19 @@
         <activity
             android:name=".community_activity"
             android:exported="true" />
-        <activity android:name=".CreateUser_activity"
+        <activity android:name=".createUser_activity"
             android:exported="true"/>
         <activity
-            android:name=".GoalTypes_activity"
+            android:name=".goalTypes_activity"
             android:exported="true" />
         <activity
-            android:name=".MyGoals_activity"
+            android:name=".myGoals_activity"
             android:exported="true" />
         <activity
             android:name=".dashboard_activity"
             android:exported="true" />
         <activity
-            android:name=".LoginPage_activity"
+            android:name=".loginPage_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
