@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SedulousTheme">
         <activity
+            android:name=".Goals_activity"
+            android:exported="false" />
+        <activity
             android:name=".subscriptions_activity"
             android:exported="true" />
         <activity
