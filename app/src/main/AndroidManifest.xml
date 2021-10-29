@@ -21,6 +21,8 @@
         <activity
             android:name=".community_activity"
             android:exported="true" />
+        <activity android:name=".CreateUser_activity"
+            android:exported="true"/>
         <activity
             android:name=".GoalTypes_activity"
             android:exported="true" />
@@ -31,7 +33,7 @@
             android:name=".dashboard_activity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginPage_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

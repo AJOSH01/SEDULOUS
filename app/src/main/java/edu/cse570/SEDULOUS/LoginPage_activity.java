@@ -7,25 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class GoalTypes_activity extends AppCompatActivity {
+public class LoginPage_activity extends AppCompatActivity {
 
-    TextView educationGoal;
-
+    private TextView register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_goal_types);
+        setContentView(R.layout.activity_login_page);
 
-        educationGoal = (TextView) findViewById(R.id.EducationGoal);
-        educationGoal.setOnClickListener(new View.OnClickListener() {
+        register = (TextView) findViewById(R.id.Register);
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GoalTypes_activity.this,SetGoal_activity.class);
+                Intent intent = new Intent(LoginPage_activity.this,CreateUser_activity.class);
                 startActivity(intent);
 
                 //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();
             }
         });
     }
+
+
 }
+
