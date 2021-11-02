@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Profile" />
 
     <TextView
-        android:id="@+id/SignOut"
+        android:id="@+id/tvSignOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Out"

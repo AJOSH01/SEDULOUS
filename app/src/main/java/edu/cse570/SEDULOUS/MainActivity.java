@@ -7,9 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView dashboard, goals, goal_setter, community, profile, subscription;
+    private TextView dashboard, goals, goal_setter, community, profile, subscription, tvsignOut;
+    FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         community = (TextView) findViewById(R.id.Community);
         profile = (TextView) findViewById(R.id.Profile);
         subscription = (TextView) findViewById(R.id.Subscription);
+        tvsignOut = (TextView) findViewById(R.id.tvSignOut);
 
+
+        mAuth = FirebaseAuth.getInstance();
 
         dashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,dashboard_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening Dashboard", Toast.LENGTH_LONG).show();
-
             }
         });
 
@@ -40,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, myGoals_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening My Goals", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -50,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, goalTypes_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening Goal Setters", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -60,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,community_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening Community", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -70,8 +69,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,profile_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening Profile", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -80,12 +77,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,subscriptions_activity.class);
                 startActivity(intent);
-
-                //Toast.makeText(MainActivity.this,"opening Subscription", Toast.LENGTH_LONG).show();
             }
         });
 
+        tvsignOut.setOnClickListener(view -> {
+            mAuth.signOut();
+            startActivity(new Intent(MainActivity.this, loginPage_activity.class));
+        });
 
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser == null){
+            startActivity(new Intent(MainActivity.this, loginPage_activity.class));
+        }
     }
 
 }
