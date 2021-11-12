@@ -18,37 +18,37 @@
         tools:layout_editor_absoluteX="-53dp">
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/DOC3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:text="Dec 28"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView23"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintStart_toEndOf="@+id/GoalDesc3"
+            app:layout_constraintTop_toBottomOf="@+id/DOC2" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/GoalDesc3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="TextView"
+            android:text="make a six figure salary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/GoalDesc2" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/GoalCategory3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toStartOf="@+id/textView23"
+            android:text="FIN"
+            app:layout_constraintEnd_toStartOf="@+id/GoalDesc3"
             app:layout_constraintHorizontal_bias="0.369"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/GoalCategory2" />
 
         <TextView
             android:id="@+id/textView2"
@@ -65,35 +65,35 @@
             app:layout_constraintVertical_bias="0.061" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/DOC2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:text="May 21"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/GoalDesc2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/GoalDesc2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="TextView"
+            android:text="Obtain GED"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+            app:layout_constraintTop_toBottomOf="@+id/GoalDesc1" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/GoalCategory2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toStartOf="@+id/textView14"
+            android:text="EDU"
+            app:layout_constraintEnd_toStartOf="@+id/GoalDesc2"
             app:layout_constraintHorizontal_bias="0.372"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/GoalCategory1" />
@@ -103,33 +103,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="Finance"
-            app:layout_constraintEnd_toStartOf="@+id/textView18"
+            android:text="HLTH"
+            app:layout_constraintEnd_toStartOf="@+id/GoalDesc1"
             app:layout_constraintHorizontal_bias="0.372"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/GoalDesc1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="TextView"
+            android:text="Lose 10 Lbs"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/DOC1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:text="Jul 28"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintStart_toEndOf="@+id/GoalDesc1"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
@@ -142,7 +142,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+            app:layout_constraintTop_toBottomOf="@+id/GoalDesc3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
