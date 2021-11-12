@@ -16,7 +16,7 @@ public class goalTypes_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goal_types);
 
-        educationGoal = (TextView) findViewById(R.id.EducationGoal);
+        educationGoal = (TextView) findViewById(R.id.Goal1btn);
         educationGoal.setOnClickListener(view -> {
             startActivity(new Intent(goalTypes_activity.this, goalSet_activity.class));
         });
